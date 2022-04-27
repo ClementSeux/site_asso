@@ -2,3 +2,4 @@ node_modules/
 *.map
 src/
 .vs/
+css/style.css

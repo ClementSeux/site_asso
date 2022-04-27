@@ -1,12 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 @import url(https://fonts.googleapis.com/css2?family=Courgette&family=Tangerine:wght@400;700&display=swap);
 
+$main_color: #ffc107;
+$sec_color: #bdbece;
+$highlight_color: #984447;
+//$light_color: #d6e5e3;
+$light_color: white;
 
-$body-bg: rgb(255, 231, 200);
-$dropdown-dark-link-hover-bg: lighten(#ffc107, 15%);
+$body-bg: $light_color;
+$dropdown-dark-link-hover-bg: $sec_color;
 $dropdown-dark-link-hover-color: black;
-$dropdown-dark-link-active-bg: #ffc107;
-$dropdown-dark-link-active-color: #777;
+$dropdown-dark-link-active-bg: $highlight_color;
+$dropdown-dark-link-active-color: black;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
@@ -28,7 +33,7 @@ $dropdown-dark-link-active-color: #777;
     $pos: 1;
     @for $i from 1 through 9 {
         $pos: $pos * -1;
-        $m: calc(30 / $i) * $pos;
+        $m: (30 / $i) * $pos;
         #{$i*10%}{transform:  rotateZ($m * 1deg)}
     }
     100%{
@@ -41,23 +46,35 @@ $dropdown-dark-link-active-color: #777;
 }
 
 @mixin quotes ($imagePath) {
-    background: radial-gradient(rgba(250,250,250,0.75), rgba(250,250,250,0.65), rgba(250, 250, 250, 0)),
+    background: radial-gradient(rgba(250,250,250,0.85), rgba(250,250,250,0.80), rgba(250,250,250,0.75), rgba(250, 250, 250, 0)),
     url($imagePath);
     background-size: cover;
+    
     p {
         font-family: 'Courgette', cursive;
-        color: darken(#ffc107, 35%);
+        color: $highlight_color;
     }
 }
 
 #quote1 {
-    @include quotes('../../img/1.jpg')
+    @include quotes('../img/1.jpg');
+    background-position: center;
 }
 
 #quote2 {
-    @include quotes('../../img/2.jpg')
+    @include quotes('../img/2.jpg')
 }
 
 #quote3 {
-    @include quotes('../../img/3.avif')
+    @include quotes('../img/3.avif');
+    background-position: center;
+}
+
+.quote {   
+    margin: auto;
+    padding: 15px;
+    background-color: $sec_color;
+    blockquote {
+        font-family: 'Courgette', cursive;
+    }
 }
