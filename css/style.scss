@@ -1,6 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 @import url(https://fonts.googleapis.com/css2?family=Courgette&family=Tangerine:wght@400;700&display=swap);
 
+
+$body-bg: rgb(255, 231, 200);
+$dropdown-dark-link-hover-bg: lighten(#ffc107, 15%);
+$dropdown-dark-link-hover-color: black;
+$dropdown-dark-link-active-bg: #ffc107;
+$dropdown-dark-link-active-color: #777;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
 .roller{
     position: relative;
     z-index: 1;
