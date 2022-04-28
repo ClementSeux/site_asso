@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 @import url(https://fonts.googleapis.com/css2?family=Courgette&family=Tangerine:wght@400;700&display=swap);
 
+//Custom pale
 $main_color: #ffc107;
 $sec_color: #bdbece;
 $highlight_color: #984447;
@@ -14,7 +15,11 @@ $dropdown-dark-link-active-bg: $highlight_color;
 $dropdown-dark-link-active-color: black;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
 
 .roller{
     position: relative;
@@ -59,7 +64,6 @@ $dropdown-dark-link-active-color: black;
     justify-content: space-around
 }
 
-
 #quote1 {
     @include quotes('../img/1.jpg');
     background-position: center;
@@ -77,7 +81,7 @@ $dropdown-dark-link-active-color: black;
 .quote {   
     margin: auto;
     padding: 15px;
-    background-color: $sec_color;
+    background-color: $main_color;
     blockquote {
         font-family: 'Courgette', cursive;
     }
@@ -88,3 +92,32 @@ $dropdown-dark-link-active-color: black;
         margin-right: 30px;
     }
 }
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  a:link {
+    color: $highlight_color;
+  }
+  
+  a:visited {
+    color: $sec_color;
+  }
+  
+  a:focus {
+    border-bottom: 1px solid;
+    background: lighten($color: $main_color, $amount: 25%);
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+    background: $main_color;
+  }
+  
+  a:active {
+    background: $main_color;
+    color: $highlight_color;
+  }
