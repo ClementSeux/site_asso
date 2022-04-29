@@ -65,6 +65,7 @@ img {
     justify-content: space-around
 }
 
+//quote-boxes within the articles
 #quote1 {
     @include quotes('../img/1.jpg');
     background-position: center;
@@ -79,10 +80,8 @@ img {
     background-position: center;
 }
 
-
-//Quotes within the articles
 .quote {   
-    
+    width: 100%;
     margin: auto;
     padding: 15px;
     background-color: $main_color;
@@ -139,5 +138,6 @@ main a {
 
 .card {
     justify-content: space-between !important;
-
 }
+
+
