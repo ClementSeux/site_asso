@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 @import url(https://fonts.googleapis.com/css2?family=Courgette&family=Tangerine:wght@400;700&display=swap);
 
-//Custom pale
+//Custom palette
 $main_color: #ffc107;
 $sec_color: #bdbece;
 $highlight_color: #984447;
@@ -13,6 +13,8 @@ $dropdown-dark-link-hover-bg: $sec_color;
 $dropdown-dark-link-hover-color: black;
 $dropdown-dark-link-active-bg: $highlight_color;
 $dropdown-dark-link-active-color: black;
+
+//Import Booststrap.scss, which is compilled with our css in style.css
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 img {
@@ -96,6 +98,7 @@ img {
     }
 }
 
+//links within the articles
 main a {
     outline: none;
     text-decoration: none;
@@ -129,34 +132,6 @@ main a {
     }
 }
 
-footer a {
-    font-weight: bolder;
-    outline: none;
-    text-decoration: none;
-    padding: 2px 1px 0;
-
-    &:link {
-    color: $sec_color
-  }
-  
-    &:visited {
-    color: $sec_color;
-  }
-  
-    &:focus {
-    color: #ffc107;
-  }
-  
-    &:hover {
-    color: #ffc107;
-  }
-  
-    &:active {
-    background: $main_color;
-    color: $highlight_color;
-  }
-}
-
 .image-float-left {
     float: left;
     margin: 0 15px 0 0;
@@ -167,14 +142,12 @@ footer a {
     margin: 0 0 0 15px;
 }
 
-#founder  {
-    border-bottom: 1px solid $sec_color;
-}
-
+//Parners' section cards
 .card {
     justify-content: space-between !important;
 }
 
+//Logos for building features
 .logos-panel {
     display: flex;
     flex-wrap: wrap;
@@ -210,13 +183,89 @@ footer a {
     }
 }
 
+@media (min-width: 992px) { 
+    aside {
+        border-left: 1px solid $sec_color;
+    }
+}
+
+
+.summary {
+    color: black;
+    line-height: 2;
+    padding: 20px 30px 20px 30px;
+    margin-bottom: 25px;
+    width: fit-content;
+    background-color: white;
+    border-radius: 3px;
+    border: $sec_color solid 5px;
+
+    a{
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+    
+        &:link {
+            color: $highlight_color;
+            background: white;
+      }
+      
+        &:visited {
+            color: $highlight_color;
+      }
+      
+        &:focus {
+            border-bottom: 1px solid;
+      }
+      
+        &:hover {
+            border-bottom: 1px solid;
+            color: $highlight_color;
+      }
+      
+        &:active {
+            color: $main_color;
+        }
+    }
+    ul {
+        list-style-type: none;
+        font-weight: bolder;
+    }
+}
+
 footer {
     background-color: $highlight_color;
     color: $sec_color;
     .top-footer{
         color: $main_color;
     }
-
+    a {
+        font-weight: bolder;
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+    
+        &:link {
+        color: $sec_color
+        }
+      
+        &:visited {
+        color: $sec_color;
+        }
+      
+        &:focus {
+        color: #ffc107;
+        }
+      
+        &:hover:not(.social) {
+        font-size: larger;
+        }
+      
+        &:active {
+        background: $main_color;
+        color: $highlight_color;
+        }
+    }
 }
 
 
