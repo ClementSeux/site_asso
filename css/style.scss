@@ -129,6 +129,34 @@ main a {
     }
 }
 
+footer a {
+    font-weight: bolder;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+
+    &:link {
+    color: $sec_color
+  }
+  
+    &:visited {
+    color: $sec_color;
+  }
+  
+    &:focus {
+    color: #ffc107;
+  }
+  
+    &:hover {
+    color: #ffc107;
+  }
+  
+    &:active {
+    background: $main_color;
+    color: $highlight_color;
+  }
+}
+
 .image-float-left {
     float: left;
     margin: 0 15px 0 0;
@@ -180,6 +208,15 @@ main a {
             }
         }
     }
+}
+
+footer {
+    background-color: $highlight_color;
+    color: $sec_color;
+    .top-footer{
+        color: $main_color;
+    }
+
 }
 
 
