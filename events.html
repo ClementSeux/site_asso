@@ -100,75 +100,67 @@
 	</nav>
 
 	<main class="container">
-		<h1>L'Agenda</h1>
-		<!--Quote-->
-		<div class="quote mt-2 mb-4">
-			<blockquote class="mb-0">
-				<svg class="me-2 align-bottom" width="30px" height="30px" viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-quote-open">
-					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-						<g transform="translate(1.000000, 1.000000)" fill="#434343">
-							<path d="M15,13.969 C15.552,13.969 16,13.534 16,13 C16,12.466 15.552,12.031 15,12.031 C12.243,12.031 11,10.83 11,8.124 L11,6.906 L14.441,6.906 C15.271,6.906 15.947,6.301 15.947,5.468 L15.947,1.512 C15.947,0.678 15.271,0 14.441,0 L10.506,0 C9.676,0 9,0.678 9,1.512 L9,8.124 C9,11.899 11.141,13.969 15,13.969 L15,13.969 Z" class="si-glyph-fill"></path>
-							<path d="M6,13.969 C6.552,13.969 7,13.534 7,13 C7,12.466 6.552,12.031 6,12.031 C3.243,12.031 2,10.83 2,8.124 L2,6.947 L5.467,6.947 C6.301,6.947 6.979,6.271 6.979,5.441 L6.979,1.505 C6.979,0.675 6.301,-0.001 5.467,-0.001 L1.512,-0.001 C0.678,-0.001 0,0.675 0,1.505 L0,8.123 C0,11.899 2.141,13.969 6,13.969 L6,13.969 Z" class="si-glyph-fill"></path>
-						</g>
-					</g>
-				</svg>
-				Dans trois jours, ma tata elle m’emmène à la mer pour me noyer.
-			</blockquote>
-			<figcaption class="mt-1 text-end">- Kadoc</figcaption>
+		
+		<!--Menu de navigation sticky-->
+		<div id="" class=" sticky-top float-start">
+			<nav id="navbar-calendar" class="navbar navbar-dark bg-warning flex-column justify-content-start align-items-stretch p-3">
+				<a class="navbar-brand" href="#">Calendrier</a>
+				<nav class="nav nav-pills flex-column">
+					<a class="nav-link" href="#item-1">Mai 2022</a>
+					<nav class="nav nav-pills flex-column">
+						<a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+						<a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+					</nav>
+					<a class="nav-link" href="#item-2">Juin 2022</a>
+					<a class="nav-link" href="#item-3">Juillet 2022</a>
+					<nav class="nav nav-pills flex-column">
+						<a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+						<a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+					</nav>
+				</nav>
+			</nav>
 		</div>
+	
+		
 
 		<div class="row">
-			<div class="card text-center m-2 col-12 col-md-6">
-				<div class="card-header">
-				  Lyon - Octogône
+						  
+			<div class="col"	data-bs-spy="scroll" data-bs-target="#navbar-calendar" data-bs-offset="0" tabindex="0">
+				
+				<h1>L'Agenda</h1>
+				<!--Quote-->
+				<div class="quote mt-2 mb-4">
+					<blockquote class="mb-0">
+						<svg class="me-2 align-bottom" width="30px" height="30px" viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-quote-open">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g transform="translate(1.000000, 1.000000)" fill="#434343">
+									<path d="M15,13.969 C15.552,13.969 16,13.534 16,13 C16,12.466 15.552,12.031 15,12.031 C12.243,12.031 11,10.83 11,8.124 L11,6.906 L14.441,6.906 C15.271,6.906 15.947,6.301 15.947,5.468 L15.947,1.512 C15.947,0.678 15.271,0 14.441,0 L10.506,0 C9.676,0 9,0.678 9,1.512 L9,8.124 C9,11.899 11.141,13.969 15,13.969 L15,13.969 Z" class="si-glyph-fill"></path>
+									<path d="M6,13.969 C6.552,13.969 7,13.534 7,13 C7,12.466 6.552,12.031 6,12.031 C3.243,12.031 2,10.83 2,8.124 L2,6.947 L5.467,6.947 C6.301,6.947 6.979,6.271 6.979,5.441 L6.979,1.505 C6.979,0.675 6.301,-0.001 5.467,-0.001 L1.512,-0.001 C0.678,-0.001 0,0.675 0,1.505 L0,8.123 C0,11.899 2.141,13.969 6,13.969 L6,13.969 Z" class="si-glyph-fill"></path>
+								</g>
+							</g>
+						</svg>
+						Dans trois jours, ma tata elle m’emmène à la mer pour me noyer.
+					</blockquote>
+					<figcaption class="mt-1 text-end">- Kadoc</figcaption>
 				</div>
-				<div class="card-body">
-				  <h5 class="card-title">Salon du jeu de société</h5>
-				  <p class="card-text">Le Cercle sera présent à l'Octogône pour animer un stand d'initiation à notre jeu de dés favoris. 
-					  <br>
-					  Nous recherchons d'ailleurs 5 volontaires pour se relayer au stand.
-					</p>
-				  <a href="#" class="btn btn-warning">Je m'inscrit</a>
-				</div>
-				<div class="card-footer text-muted">
-				  du vendredi 13 mai au dimanche 15 mai
-				</div> 
-			  </div>
-	
-			  <div class="card text-center p-4 col-12 col-md-6">
-				<div class="card-header">
-				  Lyon - Octogône
-				</div>
-				<div class="card-body">
-				  <h5 class="card-title">Salon du jeu de société</h5>
-				  <p class="card-text">Le Cercle sera présent à l'Octogône pour animer un stand d'initiation à notre jeu de dés favoris. 
-					  <br>
-					  Nous recherchons d'ailleurs 5 volontaires pour se relayer au stand.
-					</p>
-				  <a href="#" class="btn btn-warning">Je m'inscrit</a>
-				</div>
-				<div class="card-footer text-muted">
-				  du vendredi 13 mai au dimanche 15 mai
-				</div>
-			  </div>
-	
-			  <div class="card text-center p-4 col-12 col-md-6">
-				<div class="card-header">
-				  Lyon - Octogône
-				</div>
-				<div class="card-body">
-				  <h5 class="card-title">Salon du jeu de société</h5>
-				  <p class="card-text">Le Cercle sera présent à l'Octogône pour animer un stand d'initiation à notre jeu de dés favoris. 
-					  <br>
-					  Nous recherchons d'ailleurs 5 volontaires pour se relayer au stand.
-					</p>
-				  <a href="#" class="btn btn-warning">Je m'inscrit</a>
-				</div>
-				<div class="card-footer text-muted">
-				  du vendredi 13 mai au dimanche 15 mai
-				</div>
-			  </div>
-
+				
+				<h4 id="item-1">Item 1</h4>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repudiandae fuga ipsum veritatis. At voluptate eos ad consequuntur pariatur, explicabo, perferendis minima, cum doloremque sunt repellendus enim animi saepe facere.</p>
+				<h5 id="item-1-1">Item 1-1</h5>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, a. Aspernatur reprehenderit hic cupiditate commodi ipsa obcaecati facere, ratione, deleniti minus placeat odit vitae vel unde dolorum est a alias?...</p>
+				<h5 id="item-1-2">Item 1-2</h5>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, a. Aspernatur reprehenderit hic cupiditate commodi ipsa obcaecati facere, ratione, deleniti minus placeat odit vitae vel unde dolorum est a alias?...</p>
+				<h4 id="item-2">Item 2</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, a. Aspernatur reprehenderit hic cupiditate commodi ipsa obcaecati facere, ratione, deleniti minus placeat odit vitae vel unde dolorum est a alias?...</p>
+				<h4 id="item-3">Item 3</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, a. Aspernatur reprehenderit hic cupiditate commodi ipsa obcaecati facere, ratione, deleniti minus placeat odit vitae vel unde dolorum est a alias?...</p>
+				<h5 id="item-3-1">Item 3-1</h5>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, a. Aspernatur reprehenderit hic cupiditate commodi ipsa obcaecati facere, ratione, deleniti minus placeat odit vitae vel unde dolorum est a alias?...</p>
+				<h5 id="item-3-2">Item 3-2</h5>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, a. Aspernatur reprehenderit hic cupiditate commodi ipsa obcaecati facere, ratione, deleniti minus placeat odit vitae vel unde dolorum est a alias?...</p>
+			</div>
+				
+			<div class="col-2"></div>
 
 		</div>
 		
