@@ -5,6 +5,7 @@
 $main_color: #ffc107;
 $sec_color: #bdbece;
 $highlight_color: #984447;
+//$light_color: #d6e5e3;
 $light_color: white;
 
 $body-bg: $light_color;
@@ -146,7 +147,7 @@ main a {
     justify-content: space-between !important;
 }
 
-//Features' logos (WC...)
+//Logos for building features
 .logos-panel {
     display: flex;
     flex-wrap: wrap;
@@ -267,18 +268,8 @@ footer {
     }
 }
 
-.sticky-menu {
-    @media (max-width: 768px){
-        & {
-          width: 100%;
-        }
-      }  
-    a:hover{
-        border-bottom: 1px solid;
-    }
+.btn-bordeau {
+    background-color: $highlight_color;
+    color: white;
 }
-
-
-
-
 
