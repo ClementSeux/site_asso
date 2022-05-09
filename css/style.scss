@@ -17,6 +17,15 @@ $dropdown-dark-link-active-color: black;
 //Import Booststrap.scss, which is compilled with our css in style.css
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+.bg-bordeau {
+    background-color: $highlight_color;
+}
+
+.btn-bordeau {
+    background-color: $highlight_color;
+    color: white;
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -268,8 +277,5 @@ footer {
     }
 }
 
-.btn-bordeau {
-    background-color: $highlight_color;
-    color: white;
-}
+
 

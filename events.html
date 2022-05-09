@@ -12,6 +12,7 @@
 <body> 
 	<script> </script> 
 
+	<!--Main navbar-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-warning">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"> 
@@ -99,9 +100,8 @@
 		</ol>
 	</nav>
 
-	
-
-	<main class="w-100"> <!--Scrolling zone for the sticky menu-->
+	<!--Scrolling zone for the sticky menu-->
+	<main class="w-100"> 
 		
 		<!--Sticky navigation menu-->
 		<div id="" class="sticky-menu sticky-top float-start">
@@ -166,10 +166,8 @@
 			</nav>
 		</div>
 
-
 		<div class="container"> <!--Bootstrap grid container-->
-			<div class="row">
-						  
+			<div class="row">	  
 				<h1>L'Agenda</h1>
 				<!--Quote-->
 				<div class="quote mt-2 mb-4 ms-2">
@@ -192,8 +190,8 @@
 				<div class="row py-2 border-bottom">
 					<p class="col-12 col-lg-6"> Session ordinaire</p>
 					<div class="col-12 col-lg-6">
-						<button class="col-5 h-100 btn btn-bordeau">J'organise !</button>
-						<button class="col-5 h-100 btn btn-dark">Je participe !</button>
+						<button type="button" class="col-5 h-100 btn btn-bordeau" data-bs-toggle="modal" data-bs-target="#participationFormOrg">J'organise !</button>
+						<button type="button" class="col-5 h-100 btn btn-dark" data-bs-toggle="modal" data-bs-target="#participationForm" >Je participe !</button>
 					</div>
 					
 				</div>
@@ -221,6 +219,9 @@
 
 		</div>		
 
+
+
+		
 	</main>
 
 
@@ -328,6 +329,76 @@
 		</div>
 
 	</footer>
+
+	<!--Modal: Register as organizor for an event-->
+	<div class="modal fade" id="participationFormOrg" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="participationFormOrg" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header bg-bordeau text-white">
+				<h5 class="modal-title" id="exampleModalLabel">Je m'inscrit en tant qu'organisateur</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+
+			<div class="modal-body">
+				<p class="">En validant ce formulaire je me rend disponible pour organiser les activités le jour J. pour s'inscrire en tant que participant cliquez sur le bouton ci dessous.</p>
+				<button class="btn btn-dark" data-bs-target="#participationForm" data-bs-toggle="modal">Je participe !</button>
+				<form action="" method="post">
+					<div class="mb-3">
+						<label for="name" class="col-form-label">Nom:</label>
+						<input type="text" class="form-control" id="name">
+					</div>
+					<div class="mb-3">
+						<label for="email" class="col-form-label">Email:</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+					<div class="mb-3">
+						<label for="message-text" class="col-form-label">Commentaire:</label>
+						<textarea class="form-control" id="comment"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+				<input type="submit" value="Envoyer" id="submit" name="submit" class="btn btn-bordeau">
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<!--Modal: Register as participant for an event-->
+	<div class="modal fade" id="participationForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="participationFormOrg" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Je m'inscrit en tant que participant</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+
+			<div class="modal-body">
+				<p class="">En validant ce formulaire je confirme ma présence. Pouvez-vous vous rendre disponible pour organiser l'événement ? Si oui cliquez sur le bouton ci dessous.</p>
+				<button class="btn btn-bordeau" data-bs-target="#participationFormOrg" data-bs-toggle="modal">J'organise !</button>
+				<form action="" method="post">
+					<div class="mb-3">
+						<label for="name" class="col-form-label">Nom:</label>
+						<input type="text" class="form-control" id="name">
+					</div>
+					<div class="mb-3">
+						<label for="email" class="col-form-label">Email:</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+					<div class="mb-3">
+						<label for="message-text" class="col-form-label">Commentaire:</label>
+						<textarea class="form-control" id="comment"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+				<input type="submit" value="Envoyer" id="submit" name="submit" class="btn btn-dark">
+			</div>
+		</div>
+		</div>
+	</div>
 
 	<!-- Bootstrap JS -->
 	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
