@@ -104,8 +104,8 @@
 	<main class="w-100"> 
 		
 		<!--Sticky navigation menu-->
-		<div id="" class="sticky-menu sticky-top float-start">
-			<nav  class="w-100 navbar navbar-dark bg-warning flex-md-column justify-content-start align-items-stretch p-3">
+		<div id="" class="sticky-menu sticky-top float-md-start">
+			<nav  class="w-100 navbar navbar-dark bg-warning flex-md-column justify-content-start align-items-stretch p-1 p-md-3">
 				<p class="d-none d-md-block navbar-brand text-dark" href="#">
 					Calendrier</p>
 				<nav id="navbar-calendar" class="nav flex-md-column">
@@ -121,6 +121,8 @@
 								<li><a class="nav-link dropdown-item" href="#item-1-1">
 									14 mai</a></li>
 								<li><a class="nav-link dropdown-item" href="#item-1-2">
+									21 & 22 mai</a></li>
+								<li><a class="nav-link dropdown-item" href="#item-1-3">
 									28 mai</a></li>
 							</ul>
 						</li>
@@ -134,6 +136,8 @@
 								<li><a class="nav-link dropdown-item" href="#item-2-1">
 									11 juin</a></li>
 								<li><a class="nav-link dropdown-item" href="#item-2-2">
+									14 juin</a></li>
+								<li><a class="nav-link dropdown-item" href="#item-2-3">
 									25 juin</a></li>
 							</ul>
 						</li>
@@ -168,9 +172,9 @@
 
 		<div class="container"> <!--Bootstrap grid container-->
 			<div class="row">	  
-				<h1>L'Agenda</h1>
+				<h1 class="">L'Agenda</h1>
 				<!--Quote-->
-				<div class="quote mt-2 mb-4 ms-2">
+				<div class="quote mt-2 mb-4 mx-2">
 					<blockquote class="mb-0">
 						<svg class="me-2 align-bottom" width="30px" height="30px" viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-quote-open">
 							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -185,43 +189,111 @@
 					<figcaption class="mt-1 text-end">- Kadoc</figcaption>
 				</div>
 				
-				<h4 id="item-1">Mai</h4>
-				<h5 id="item-1-1">14 mai - <span class="text-muted">Session de jeu</span></h5>
-				<div class="row py-2 border-bottom">
-					<p class="col-12 col-lg-6"> Session ordinaire</p>
-					<div class="col-12 col-lg-6">
-						<button type="button" class="col-5 h-100 btn btn-bordeau" data-bs-toggle="modal" data-bs-target="#participationFormOrg">J'organise !</button>
-						<button type="button" class="col-5 h-100 btn btn-dark" data-bs-toggle="modal" data-bs-target="#participationForm" >Je participe !</button>
-					</div>
+				<h4 class="py-3" id="item-1">Mai</h4>
+
+				<div class="py-3 ms-2 border-bottom">
 					
+					<h5 id="item-1-1">14 mai à 18h00 - <span class="text-muted">Session de jeu</span></h5>
+					<div class="row py-2 ">
+						<p class="col-12 col-lg-9"> Session ordinaire au Nid</p>
+						<div class="col-8 col-lg-3 ">
+							<button type="button" class="col-5 col-lg-12 mt-lg-auto mb-lg-1 btn btn-bordeau" data-bs-toggle="modal" data-bs-target="#participationFormOrg">J'organise !</button>
+							<button type="button" class="col-5 col-lg-12 mt-lg-1 mb-lg-auto btn btn-dark" data-bs-toggle="modal" data-bs-target="#participationForm" >Je participe !</button>
+						</div>
+					</div>
 				</div>
-				<h5 id="item-1-1">21 & 22 mai - <span class="text-muted">Salon du jeu à l'Octogône !</span></h5>
-				<p>Le Cercle annimera un stand d'initiation à notre jeu favoris lors duu salon annuel du jeu qui se tiendra comme d'habitude à l'Octogône à Lyon. Nous sommes à la recherche de 5 volontaires. Si vous êtes intéressés, inscrivez vous en cliqant sur le bouton !</p>
-				<h5 id="item-1-2">28 mai - <span class="text-muted">Session de jeu</span></h5>
-				<p>Session ordinaire</p><h4 id="item-2">Juin</h4>
-				<h5 id="item-2-1">11 juin - <span class="text-muted">Session de jeu</span></h5>
-				<p>Session ordinaire</p>
-				<h5 id="item-2-2">25 juin - <span class="text-muted">Session de jeu</span></h5>
-				<p>Session ordinaire</p>
-				<h4 id="item-3">Juillet</h4>
-				<h5 id="item-3-1">9 juillet - <span class="text-muted">Session de jeu</span></h5>
-				<p>Session ordinaire</p>
-				<h5 id="item-3-2">23 juillet - <span class="text-muted">Session de jeu</span></h5>
-				<p>Session ordinaire</p>
-				<h4 id="item-4">Août</h4>
+				
+				<div class="py-3 ms-2 border-bottom">
+					<h5 id="item-1-2">21 & 22 mai - <span class="text-muted">Salon du jeu à l'Octogône !</span></h5>
+					<div class="row py-2">
+						<p class="col-12 col-lg-9">Le Cercle annimera un stand d'initiation à notre jeu favoris lors duu salon annuel du jeu qui se tiendra comme d'habitude à l'Octogône à Lyon. Nous sommes à la recherche de 5 volontaires. Si vous êtes intéressés, inscrivez vous en cliqant sur le bouton !</p>
+						<div class="col-8 col-lg-3 ">
+							<button type="button" class="col-5 col-lg-12 mt-lg-auto mb-lg-1 btn btn-bordeau" data-bs-toggle="modal" data-bs-target="#participationFormOrg">J'organise !</button>
+							<button type="button" class="col-5 col-lg-12 mt-lg-1 mb-lg-auto btn btn-dark" data-bs-toggle="modal" data-bs-target="#participationForm" >Je participe !</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="py-3 ms-2 border-bottom">
+					<h5 id="item-1-3">28 mai à 18h00 - <span class="text-muted">Session de jeu</span></h5>
+					<div class="row py-2">
+						<p class="col-12 col-lg-9"> Session ordinaire au Nid</p>
+						<div class="col-8 col-lg-3 ">
+							<button type="button" class="col-5 col-lg-12 mt-lg-auto mb-lg-1 btn btn-bordeau" data-bs-toggle="modal" data-bs-target="#participationFormOrg">J'organise !</button>
+							<button type="button" class="col-5 col-lg-12 mt-lg-1 mb-lg-auto btn btn-dark" data-bs-toggle="modal" data-bs-target="#participationForm" >Je participe !</button>
+						</div>
+					</div>
+				</div>
+				
+				<h4 class="py-3" id="item-2">Juin</h4>
+
+				<div class="py-3 ms-2 border-bottom">
+					<h5 id="item-2-1">11 juin à 18h00 - <span class="text-muted">Session de jeu</span></h5>
+					<div class="row py-2">
+						<p class="col-12 col-lg-9"> Session ordinaire au Nid</p>
+						<div class="col-8 col-lg-3">
+							<button type="button" class="col-5 col-lg-12 mt-lg-auto mb-lg-1 btn btn-bordeau" data-bs-toggle="modal" data-bs-target="#participationFormOrg">J'organise !</button>
+							<button type="button" class="col-5 col-lg-12 mt-lg-1 mb-lg-auto btn btn-dark" data-bs-toggle="modal" data-bs-target="#participationForm" >Je participe !</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="py-3 ms-2 border-bottom">
+					<h5 id="item-2-2">14 juin à 14h00 - <span class="text-muted">Atelier à l'école primaire Saint Exupéry</span></h5>
+					<div class="row py-2">
+						<p class="col-12 col-lg-9 col-xl-">Le Cercle organise un atelier "Création d'un jeu de société" avec les enfants de CE2 et CM1 de l'école Saint Exupéry (Lyon 3ème). Nous recherchons 4 volontaires de 14h à 16h.</p>
+						<div class="col-8 col-lg-3">
+							<button type="button" class="col-5 col-lg-12 mt-lg-auto mb-lg-1 btn btn-bordeau" data-bs-toggle="modal" data-bs-target="#participationFormOrg">J'organise !</button>
+							<button type="button" class="col-5 col-lg-12 mt-lg-1 mb-lg-auto btn btn-dark" data-bs-toggle="modal" data-bs-target="#participationForm" >Je participe !</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="py-3 ms-2 border-bottom">
+					<h5 id="item-2-3">25 juin à 18h00 - <span class="text-muted">Session de jeu</span></h5>
+					<div class="row py-2">
+						<p class="col-12 col-lg-9"> Session ordinaire au Nid</p>
+						<div class="col-8 col-lg-3">
+							<button type="button" class="col-5 col-lg-12 mt-lg-auto mb-lg-1 btn btn-bordeau" data-bs-toggle="modal" data-bs-target="#participationFormOrg">J'organise !</button>
+							<button type="button" class="col-5 col-lg-12 mt-lg-1 mb-lg-auto btn btn-dark" data-bs-toggle="modal" data-bs-target="#participationForm" >Je participe !</button>
+						</div>
+					</div>
+				</div>
+				
+				<h4 class="py-3" id="item-3">Juillet</h4>
+
+				<div class="py-3 ms-2 border-bottom">
+					<h5 id="item-3-1">9 juillet à 18h00 - <span class="text-muted">Session de jeu</span></h5>
+					<div class="row py-2">
+						<p class="col-12 col-lg-9"> Session ordinaire au Nid</p>
+						<div class="col-8 col-lg-3">
+							<button type="button" class="col-5 col-lg-12 mt-lg-auto mb-lg-1 btn btn-bordeau" data-bs-toggle="modal" data-bs-target="#participationFormOrg">J'organise !</button>
+							<button type="button" class="col-5 col-lg-12 mt-lg-1 mb-lg-auto btn btn-dark" data-bs-toggle="modal" data-bs-target="#participationForm" >Je participe !</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="py-3 ms-2 border-bottom">
+					<h5 id="item-3-2">23 juillet à 18h00 - <span class="text-muted">Session de jeu</span></h5>
+					<div class="row py-2">
+						<p class="col-12 col-lg-9"> Session ordinaire au Nid</p>
+						<div class="col-8 col-lg-3">
+							<button type="button" class="col-5 col-lg-12 mt-lg-auto mb-lg-1 btn btn-bordeau" data-bs-toggle="modal" data-bs-target="#participationFormOrg">J'organise !</button>
+							<button type="button" class="col-5 col-lg-12 mt-lg-1 mb-lg-auto btn btn-dark" data-bs-toggle="modal" data-bs-target="#participationForm" >Je participe !</button>
+						</div>
+					</div>
+				</div>
+				
+				<h4 class="py-3" id="item-4">Août</h4>
+
 				<div class="alert alert-warning row m-2" role="alert">
-					<svg class="col-2 align-middle d-inline text-warning"	xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
+					<svg class="col-1 align-middle d-inline text-warning"	xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
 						<path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
 						</svg>
 					<p class="col d-inline my-auto text-center">Fermeture annuelle en l'absence de beaucoup de membres. <br> Bonnes vacances les amis !</p>
 				</div>
 			</div>
-
 		</div>		
-
-
-
-		
 	</main>
 
 
