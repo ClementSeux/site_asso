@@ -191,14 +191,15 @@ main a {
 
 
 .summary {
-    color: black;
+    color: $main_color;
     line-height: 2;
     padding: 20px 30px 20px 30px;
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
     width: fit-content;
-    background-color: white;
-    border-radius: 3px;
-    border: $sec_color solid 5px;
+    background-color: $highlight_color;
+    
 
     a{
         outline: none;
@@ -206,12 +207,12 @@ main a {
         padding: 2px 1px 0;
     
         &:link {
-            color: $highlight_color;
-            background: white;
+            color: $main_color;
+            
       }
       
         &:visited {
-            color: $highlight_color;
+            color: $main_color;
       }
       
         &:focus {
