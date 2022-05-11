@@ -177,6 +177,13 @@ main a, .breadcrumb a {
     }
 }
 
+.lettrine::first-letter {
+    float: left;
+    margin-right: 15px;
+    font-size: 4em;
+    line-height: 1;
+    color: #000;
+   }
 
 //Parners' section cards
 .card {
