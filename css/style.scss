@@ -121,7 +121,7 @@ img {
 }
 
 //links within the articles
-main a {
+main a, .breadcrumb a {
     outline: none;
     text-decoration: none;
     padding: 2px 1px 0;
@@ -163,6 +163,20 @@ main a {
     float: right;
     margin: 0 0 0 15px;
 }
+
+.image-responsive {
+    width: auto;
+    margin: 0 0 15px 0;
+}
+
+@media (min-width: 768px) { 
+    .image-responsive {
+        float: left;
+        margin: 0 15px 0 0;
+        width: 25vw;
+    }
+}
+
 
 //Parners' section cards
 .card {
